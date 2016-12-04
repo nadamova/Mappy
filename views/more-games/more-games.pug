@@ -1,4 +1,10 @@
 extends ../_layout
 
 block content
-    p It works!
+    .container
+        ul
+         each game in result
+            li
+                p=game.name
+                img(src= game.gameUrl, class="more-game-img") 
+                img(src= game.gameImgUrl)
